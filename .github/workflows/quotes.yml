@@ -1,0 +1,28 @@
+name: quotes
+on:
+  schedule:
+    # 한국 시간 평일 09:05~15:45, 10분 간격 (UTC 기준)
+    - cron: '5-59/10 0-5 * * 1-5'
+    - cron: '5-45/10 6 * * 1-5'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: quotes
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python fetch.py
+      - run: |
+          git config user.name "quotes-bot"
+          git config user.email "quotes-bot@users.noreply.github.com"
+          git add data/quotes.json
+          git diff --cached --quiet || git commit -m "quotes $(TZ=Asia/Seoul date '+%Y-%m-%d %H:%M')"
+          git push
