@@ -1,8 +1,8 @@
-2026-10-20 10:21
+2026-10-20 10:58
 KRX 실패 MDCSTAT01501 <HTTPError 400: 'Bad Request'>
 KRX 실패 MDCSTAT04301 <HTTPError 400: 'Bad Request'>
 KRX 종목 수 0
 네이버 KOSPI 100 {"stockListSortType":"MARKET_VALUE","stockListCategoryType":"KOSPI","stocks":[{"stockType":"domestic","stockEndType":"stock","itemCode":"005930","reut
 네이버 KOSDAQ 100 {"stockListSortType":"MARKET_VALUE","stockListCategoryType":"KOSDAQ","stocks":[{"stockType":"domestic","stockEndType":"stock","itemCode":"196170","reu
-네이버 금융 종목 수 4311
-저장 2026-10-20 10:21 네이버 금융 4311 | 표본 {'005930': {'c': 212750}, '000660': {'c': 1202000}, '0193T0': {'c': 4725}}
+네이버 금융 종목 수 4315
+저장 2026-10-20 10:58 네이버 금융 4315 | 표본 {'005930': {'c': 214500}, '000660': {'c': 1235000}, '0193T0': {'c': 4995}}
