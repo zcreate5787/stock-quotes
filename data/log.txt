@@ -1,8 +1,8 @@
-2026-11-10 16:00
+2026-11-10 17:19
 KRX 실패 MDCSTAT01501 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
-KRX 실패 MDCSTAT04301 JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+KRX 실패 MDCSTAT04301 TimeoutError('The read operation timed out')
 KRX 종목 수 0
 네이버 KOSPI 100 {"stockListSortType":"MARKET_VALUE","stockListCategoryType":"KOSPI","stocks":[{"stockType":"domestic","stockEndType":"stock","itemCode":"005930","reut
 네이버 KOSDAQ 100 {"stockListSortType":"MARKET_VALUE","stockListCategoryType":"KOSDAQ","stocks":[{"stockType":"domestic","stockEndType":"stock","itemCode":"196170","reu
-네이버 금융 종목 수 4323
-저장 2026-11-10 16:00 네이버 금융 4323 | 표본 {'005930': {'c': 198900}, '000660': {'c': 1212000}, '0193T0': {'c': 4515}}
+네이버 금융 종목 수 4322
+저장 2026-11-10 17:19 네이버 금융 4322 | 표본 {'005930': {'c': 199300}, '000660': {'c': 1217000}, '0193T0': {'c': 4515}}
